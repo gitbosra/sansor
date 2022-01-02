@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baber shop website desing</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    
+  
+  
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+ 
+</head>
+<body>
+<section id="banner">
+<img src="images/logo.png" class="logo">
+<div class="banner-text">
+<h1>Hair Studio</h1>
+<p>Style Your Hair IS Style YOur Life</p>
+   <div class="banner-btn">
+   <a href="#"><span></span>Find Out</a>
+   <a href="#"><span></span>Read More</a>
+   </div>
+</div>
+
+
+</section>
+
+<div id="sideNav">
+<nav>
+<ul>
+<li><a href="#">HOME</a></li>
+<li><a href="#">FEATURES</a></li>
+<li><a href="#">SERVICES</a></li>
+<li><a href="#">TESTIMONIL</a></li>
+<li><a href="#">MEET US</a></li>
+</ul>
+</nav>
+</div>
+<div id="manuBtn">
+<img src="images/menu.png" id="menu" >
+</div>
+
+<!--Features-->
+<section id="Feature">
+<div class="title-text">
+<P>Features</P>
+<h1>Why Choose Us</h1>
+</div>
+<div class="feature-box">
+<div class="features">
+<h1>Exprienced Staff</h1>
+<div class="features-desc">
+<div class="features-icon">
+<i class="fa fa-shield"></i>
+</div>
+<div class="features-text">
+<p>Donec eget ultricies sapi .sed porttitor ,mauris ater lob facilisis , elit sapie eleifend ligula.</p>
+</div>
+</div>
+</div>
+<div class="features-img">
+<img src="images/barber-man.jpg">
+</div>
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+<script>
+var manuBtn = document.getElementById("manuBtn")
+var sideNav = document.getElementById("sideNav")
+var menu = document.getElementById("menu")
+sideNav.style.right="-250px";
+
+manuBtn.onclick = function() {
+if(sideNav.style.right == "-250px"){
+sideNav.style.right = "0";
+menu.src = "images/close.png";
+
+}
+else{
+sideNav.style.right = "-250px";
+menu.src = "images/menu.png";
+}
+
+
+
+}
+
+</script>
+
+    
+</body>
+</html>
